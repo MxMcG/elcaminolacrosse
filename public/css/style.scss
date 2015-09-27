@@ -1,3 +1,6 @@
+$yellow:rgb(255, 196, 35);
+$brown:rgb(74, 38, 23);
+
 body {
 	margin:0;
 	padding:0;
@@ -7,12 +10,25 @@ body {
 
 .top-nav {
 	position:fixed;
-	background:rgba(255, 255, 255, 0.7);
+	background:rgba(255, 255, 255, 0.3);
 	margin:0;
 	height:100px;
 	width:100%;
-	border-bottom:rgba(209, 209, 209, 0.5) 1px solid;
 	z-index: 1;
+
+	.logo {
+		position:absolute;
+		width:100px;
+		margin:5px 25px;
+	}
+
+	.title {
+		position:absolute;
+		width:125px;
+		top:40%;
+		margin-left: 120px;
+
+	}
 
 	ul {
 	list-style:none;
@@ -29,15 +45,8 @@ body {
 			text-align: center;
 			position:relative;
 			float:right;
-			border-right:1px rgba(209, 209, 209, 0.5) solid;
 			height:35px;
 			width:100px;
-				&:hover ~ .border-bottom {
-			transform:translateY(0%);
-			visibility: visible;
-			}
-
-
 
 			.border-bottom {
 				position:absolute;
@@ -45,7 +54,7 @@ body {
 				left: 0;
 				width:100%;
 				height:100%;
-				border-bottom:1px rgb(209, 209, 209) solid;
+				border-bottom:1px $yellow solid;
 				transform:translateY(35%);
 				visibility: hidden;
 				transition: all .4s ease-in-out;
@@ -81,6 +90,13 @@ body {
 			visibility: visible;
 
 			}
+					&:focus {
+						outline:0;
+					}
+					&:focus ~ .border-bottom {
+						transform:translateY(0%);
+						visibility:visible;
+					}
 
 			}
 
@@ -91,8 +107,9 @@ body {
 
 	}
 
-	li:first-child a {
+	li:first-child {
 		border-right: none;
+		margin-right: 20px;
 	}
 
 
@@ -110,6 +127,7 @@ body {
 	text-align: center;
 	padding:200px 0;
 	z-index: 0;
+	background:lightgray;
 
 	h1 {
 		font-family: gill sans;
