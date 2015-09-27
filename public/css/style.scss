@@ -23,35 +23,85 @@ body {
 
 
 
+
 		li {
 			display:inline-block;
 			text-align: center;
+			position:relative;
 			float:right;
 			border-right:1px rgba(209, 209, 209, 0.5) solid;
+			height:35px;
+			width:100px;
+				&:hover ~ .border-bottom {
+			transform:translateY(0%);
+			visibility: visible;
+			}
+
+
+
+			.border-bottom {
+				position:absolute;
+				top: 0;
+				left: 0;
+				width:100%;
+				height:100%;
+				border-bottom:1px rgb(209, 209, 209) solid;
+				transform:translateY(35%);
+				visibility: hidden;
+				transition: all .4s ease-in-out;
+
+
+
+
+
+			}
+
+
+
 
 
 
 			a {
 				font-size: 14px;
 				text-decoration: none;
+				position:fixed;
 				color:black;
 				display:block;
 				width:100px;
 				margin:auto 0;
+				height:30px;
 				padding: 10px 0;
 				box-sizing:border-box;
 				font-family: gill sans;
 				font-weight: lighter;
+				z-index:5;
+
+					&:hover ~ .border-bottom {
+			transform:translateY(0%);
+			visibility: visible;
+
 			}
 
+			}
+
+
+		
+		
 		}
+
 	}
 
 	li:first-child a {
 		border-right: none;
 	}
 
+
+
+
+
 }
+
+
 
 .main-container {
 	position:relative;
