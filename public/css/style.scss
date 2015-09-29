@@ -18,15 +18,15 @@ body {
 
 	.logo {
 		position:absolute;
-		width:100px;
-		margin:3px 25px;
+		width:75px;
+		margin:16px 25px;
 	}
 
 	.title {
 		position:absolute;
 		width:125px;
 		top:40%;
-		margin-left: 120px;
+		margin-left: 95px;
 
 	}
 
@@ -55,9 +55,13 @@ body {
 				width:100%;
 				height:100%;
 				border-bottom:1px $yellow solid;
-				transform:translateY(35%);
+				-webkit-transform:translateY(35%);
+				-moz-transform:translateY(35%);
+				-o-transform:translateY(35%);
 				visibility: hidden;
-				transition: all .4s ease-in-out;
+				-webkit-transition: all .4s ease-in-out;
+				-o-transition: all .4s ease-in-out;
+				-moz-transition: all .4s ease-in-out;
 
 
 
@@ -86,7 +90,9 @@ body {
 				z-index:5;
 
 					&:hover ~ .border-bottom {
-			transform:translateY(0%);
+			-webkit-transform:translateY(0%);
+			-o-transform:translateY(0%);
+			-moz-transform:translateY(0%);
 			visibility: visible;
 
 			}
@@ -94,9 +100,18 @@ body {
 						outline:0;
 					}
 					&:focus ~ .border-bottom {
-						transform:translateY(0%);
+						-webkit-transform:translateY(0%);
+						-moz-transform:translateY(0%);
+						-o-transform:translateY(0%);
 						visibility:visible;
 					}
+					&:visited ~ .border-bottom {
+						-webkit-transform:translateY(0%);
+						-moz-transform:translateY(0%);
+						-o-transform:translateY(0%);
+						visibility:visible;
+					}
+
 
 			}
 
@@ -109,7 +124,7 @@ body {
 
 	li:first-child {
 		border-right: none;
-		margin-right: 20px;
+		margin-right: 15px;
 	}
 
 
@@ -122,19 +137,77 @@ body {
 
 .main-container {
 	position:relative;
-	height:500px;
+	height:550px;
 	width:100%;
-	text-align: center;
-	padding:200px 0;
+	padding:115px 0;
 	z-index: 0;
 	background:lightgray;
 
 	h1 {
 		font-family: gill sans;
-		font-weight: bolder;
+		font-weight: lighter;
+		letter-spacing: 3px;
+		padding-bottom:10px;
 		font-size: 50px;
 		width:500px;
 		margin:0 auto;
+		border-bottom: 1px rgba(0,0,0,0.1) solid;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.fadein {
+		opacity:0;
 	}
 
 }
+
+#roster {
+	background:white;
+	width:100%;
+	text-align: center;
+
+	.column {
+		width:25%;
+		height:100%;
+		display: inline-block;
+		margin:20px auto;
+		padding:0;
+		float:left;
+
+		h2 {
+			font-family: gill sans;
+			font-weight: 400;
+			padding-bottom: 10px;
+			border-bottom: 1px rgba(0,0,0,0.1) solid;
+			width:100px;
+			margin:20px auto;
+			font-size: 25px;
+			letter-spacing: 1px
+		}
+
+		ul {
+			margin:0;
+			padding:0;
+
+
+			li {
+				list-style: none;
+				font-family: gill sans;
+				text-align: center;
+				width:100%;
+				font-size:20px;
+				font-weight: lighter;
+				margin-top:10px;
+
+			}
+
+
+			
+		
+		}
+	}
+
+
+}
+
