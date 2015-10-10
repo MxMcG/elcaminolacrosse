@@ -19,7 +19,7 @@ body { margin: 0; padding: 0; max-height: 100%; }
 .main-container .fadein { opacity: 0; }
 
 #schedule span { color: #4a2617; }
-#schedule h1 { text-align: justify; margin: 25px auto 0 auto; width: 85%; border-bottom: 0; padding-bottom: 5px; color: #ffc423; }
+#schedule h1 { text-align: justify; margin: 10px auto 0 auto; width: 85%; border-bottom: 0; padding-bottom: 5px; color: #ffc423; }
 #schedule .schedule-container { width: 85%; height: 440px; background: white; margin: 10px auto; }
 #schedule .schedule-container ul { height: 100%; width: 100%; margin: 0; padding: 0; overflow: scroll; overflow-x: hidden; }
 #schedule .schedule-container ul li { height: 20%; width: 100%; border-bottom: 1px #4a2617 solid; list-style: none; margin: 0; float: left; padding: 10px 0 10px 10px; }
