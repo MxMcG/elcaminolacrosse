@@ -1,0 +1,60 @@
+@media screen and (max-width: 1200px) {
+
+	.banner h1{
+		font-size:25px;
+
+	}
+
+	.top-nav ul {
+		display: none;
+	}
+
+	#schedule h1 {
+		font-size: 20px;
+	}
+
+	#roster {
+		text-align: none;
+	}
+
+
+	#roster .column li {
+		width: 100%;
+
+	}
+
+	.column-wrapper {
+		width:auto;
+	}
+
+
+
+	#roster .column {
+		float:none !important;
+		display:block !important;
+		width:100% !important;
+
+	}
+	#roster {
+		height:auto;
+	}
+
+	.top-nav h1 {
+		display:none;
+	}
+
+	.last-year {
+		display:none !important;
+	}
+
+	.schedule-container {
+		font-size: 12px;
+
+	}
+
+	.time-date {
+		border:none !important;
+	}
+
+
+}

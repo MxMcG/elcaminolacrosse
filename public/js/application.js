@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
   $('td a').on("click", function(e){
     e.preventDefault();
     $(".right-img img").remove();
@@ -22,6 +24,10 @@ $(document).ready(function() {
         }
     });
   }); // end window scroll
+
+  $(window).scroll(function(){
+    $('.top-nav').css("top", Math.max(0, 100 - $(this).scrollTop()));
+});
 
 
 }); //end doc ready
