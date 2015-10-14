@@ -1,25 +1,53 @@
 <div class="main-container" id="gallery">
-  <h1>Gallery</h1>
-  <div class="gallery-column-left">
-    <table style="width:100%" class="gallery-table">
-      <tr>
-        <td><a href="#"><img src="lax1.jpg"></a></td>
-        <td><a href="#"><img src="lax2.jpg"></a></td>
-        <td><a href="#"><img src="lax3.jpg"></a></td>
-      </tr>
-      <tr>
-        <td><a href="#"><img src="lax4.jpg"></a></td>
-        <td><a href="#"><img src="lax5.jpg"></a></td>
-        <td><a href="#"><img src="lax6.jpg"></a></td>
-      </tr>
-      <tr>
-        <td><a href="#"><img src="lax7.jpg"></a></td>
-        <td><a href="#"><img src="lax8.jpg"></a></td>
-        <td><a href="#"><img src="lax9.jpg"></a></td>
-      </tr>
-    </table>
+
+  <div id="vanilla-slideshow-container">
+    <h1>Gallery</h1>
+      <div id="vanilla-slideshow">
+
+          <div class="vanilla-slide">
+              <img src="lax4.jpg" alt="slide1">
+          </div>
+
+          <div class="vanilla-slide">
+              <img src="lax3.jpg" alt="slide2">
+          </div>
+
+          <div class="vanilla-slide">
+              <img src="lax2.jpg" alt="slide3">
+          </div>
+
+          <div class="vanilla-slide">
+              <img src="lax1.jpg" alt="slide4">
+          </div>
+
+      </div>
+
+      <div id="vanilla-indicators"></div>
+
+      <div id="vanilla-slideshow-previous">
+          <img src="arrow-previous.png" alt="slideshow arrow">
+      </div>
+      <div id="vanilla-slideshow-next">
+          <img src="arrow-next.png" alt="slideshow arrow">
+      </div>
   </div>
-  <div class="gallery-column-right">
-    <div class="right-img"></div>
-  </div>
+
 </div>
+<script src="/js/vanilla_slideshow.js"></script>
+
+<script>
+  vanillaSlideshow.init({
+        // auto slideshow, options: true or false
+        slideshow: true,
+        // slideshow delay
+        delay: 5000,
+        // display arrows, options: true or false
+        arrows: true,
+        // display indicators, options: true or false
+        indicators: true,
+        // start slideshow randomly, options: true or false
+        random: false,
+        // animation speed
+        animationSpeed: '1s'
+  });
+</script>
