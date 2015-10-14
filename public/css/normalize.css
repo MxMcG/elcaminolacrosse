@@ -394,3 +394,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+.schedule-container::-webkit-scrollbar-thumb {
+    background-color: black;
+
+  }
