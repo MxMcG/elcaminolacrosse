@@ -26,7 +26,7 @@ $(document).ready(function() {
   }); // end window scroll
 
   $(window).scroll(function(){
-    $('.top-nav').css("top", Math.max(0, 100 - $(this).scrollTop()));
+    $('.top-nav').css("top", Math.max(0, 150 - $(this).scrollTop()));
 });
 
 

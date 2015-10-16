@@ -1,9 +1,59 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
 
-	.banner h1{
-		font-size:25px;
+
+.top-nav ul {
+		display: none;
+	}
+
+	.last-year {
+		display:none !important;
+	}
+
+	#roster .column li {
+		width: 100%;
 
 	}
+
+	.column-wrapper {
+		width:auto;
+	}
+
+	.time-date {
+		margin:0;
+	}
+
+
+
+	#roster .column {
+		float:none !important;
+		display:block !important;
+		width:100% !important;
+
+	}
+	#roster {
+		height:auto;
+	}
+
+		.banner img {
+		display:none;
+	}
+		.banner {
+			background: $brown;
+			width:100%;
+			height:150px;
+		}
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
 
 	.top-nav ul {
 		display: none;
