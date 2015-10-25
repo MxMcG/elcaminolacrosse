@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  $('.faded').hide().fadeIn(3000);
 
 
   $('td a').on("click", function(e){
@@ -29,5 +30,11 @@ $(document).ready(function() {
     $('.top-nav').css("top", Math.max(0, 150 - $(this).scrollTop()));
 });
 
+  $(".menu").on("click", function(){
+    $(".top-nav ul").toggleClass("active");
+
+  });
+
+  
 
 }); //end doc ready

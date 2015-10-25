@@ -1,14 +1,82 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+
+	#vanilla-slideshow .vanilla-slide img {
+		width: 1200px !important;
+		float: left;
+	}
+
+
+
+#vanilla-slideshow .vanilla-slide {
+	background-size: auto 550px !important;
+	width:auto;
+	overflow: hidden;
+}
+	.menu {
+		display:block !important;
+	}
+
+	#schedule {
+		background-size: auto 850px;
+		background-position: 50% 25%;
+
+	}
+
+	.banner {
+		background-size: auto 150px;
+
+
+
+	}
+
+		.banner h1 {
+		font-size: 65px;
+	}
+
 
 
 .top-nav ul {
-		display: none;
-	}
+		float: right !important;
+		margin: 0;
+		background:darkgray;
+		width: 100px;
+		right:0;
+		margin-top:100px;
+		padding:25px;
+		transform:translateX(100%);
+		transition: all .3s ease;
 
-	.last-year {
-		display:none !important;
-	}
 
+
+	}
+.top-nav ul.active {
+	transform:translateX(0%);
+}
+
+
+.top-nav ul li {
+	display: block !important;
+	margin-right: 0 !important;
+	height: 45px;
+	float: left;
+}
+.top-nav ul li a {
+	font-size: 25px;
+	float:left;
+	text-align: justify;
+	height:25% !important;
+
+
+}
+
+.border-bottom {
+	display:none;
+}
+
+
+
+
+	
 	#roster .column li {
 		width: 100%;
 
@@ -42,6 +110,50 @@
 			width:100%;
 			height:150px;
 		}
+
+	.last-year {
+		display:none !important;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	#vanilla-slideshow .vanilla-slide img {
+		width: 800px !important;
+		float: left;
+	}
+
+	.faded {
+		font-size: 30px !important;
+	}
+
+	.faded span {
+		font-size:30px !important;
+	}
+
+	.top-nav h1 {
+		margin: 24px auto 0 auto;
+		width:100%;
+		text-align: center;
+	}
+
+	.last-year {
+		margin: 0;
+	}
+
+	.schedule-container {
+		font-size: 12px;
+
+	}
+
+	.last-year {
+		display:none !important;
+	}
+
+
+
 }
 
 
@@ -51,13 +163,16 @@
 
 
 
+@media screen and (max-width: 600px) {
 
-@media screen and (max-width: 500px) {
-
-
-	.top-nav ul {
-		display: none;
+	.this-year {
+		display:none !important;
 	}
+
+	.banner h1 {
+		font-size: 50px;
+	}
+
 
 	#schedule h1 {
 		font-size: 20px;
@@ -65,6 +180,7 @@
 
 	#roster {
 		text-align: none;
+		padding:150px 0;
 	}
 
 

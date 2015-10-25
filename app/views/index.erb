@@ -1,9 +1,10 @@
-<div class="banner">
-<img src="elcamino-banner.png">
+<div class="banner" id="banner">
+  <h1>EL CAMINO WILDCATS</h1>
 </div>
 <nav class="top-nav">
   <h1>EC LAX</h1>
- <img src="/elcamino-logo.png" class="logo">
+ <a href="#banner"><img src="/elcamino-logo.png" class="logo"></a>
+  <a><img src="../menu-btn.png" class="menu"></a>
     <ul class="top-menu">
       <li><a href="#contact">Contact</a><div class="border-bottom"></div></li>
       <li><a href="#roster">Roster</a><div class="border-bottom"></div></li>
@@ -13,7 +14,6 @@
 </nav>
 
 <div id="main-wrapper">
-
   <%= erb :opener %>
   <%= erb :schedule %>
   <%= erb :gallery %>
