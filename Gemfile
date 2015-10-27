@@ -14,8 +14,9 @@ gem 'activesupport', '~>4.1'
 gem 'activerecord', '~>4.1'
 
 gem 'rake'
-
+gem 'bundler'
 gem 'shotgun'
+gem 'rspec'
 
 group :test do
   gem 'faker'
