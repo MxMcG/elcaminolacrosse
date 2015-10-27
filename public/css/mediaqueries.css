@@ -152,6 +152,10 @@
 		display:none !important;
 	}
 
+	#opener h1 {
+		font-size: 35px !important;
+	}
+
 
 
 }
@@ -179,7 +183,7 @@
 
 
 	#schedule h1 {
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	#roster {
