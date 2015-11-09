@@ -10,7 +10,7 @@
   position: absolute;
   width: 100%;
   bottom: 0;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
   
 
 }
@@ -21,8 +21,6 @@
   width: 150px;
   text-decoration: none;
   position: relative;
-  transform: translateY(-50%);
-  top: 50%;
   text-transform: uppercase;
   color:white;
   height: 50px;
@@ -133,7 +131,7 @@ html, body {
   position: absolute;
   bottom: 50px;
   left:50%;
-  transform:translateX(-50%);
+  -webkit-transform:translateX(-50%);
   
 }
 
