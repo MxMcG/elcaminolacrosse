@@ -1,7 +1,8 @@
 body { margin: 0; padding: 0 0 0 135px 0; max-height: 100%; }
 
 .banner { background-image: url(../elcamino-banner.png); width: 100%; height: 150px; background-size: 100% 150px; }
-.banner h1 { margin: 0; font-family: gill sans; font-size: 75px; font-weight: bold; color: white; position: relative; top: 50%; -webkit-transform: translateY(-50%); text-align: center; }
+.banner form { float: right; top: 0 !important; margin: 10px 10px 0 0; position: absolute; right: 0; }
+.banner h1 { margin: 0; font-family: gill sans; font-size: 65px; font-weight: bold; width: 75%; margin: 0 auto; color: white; position: relative; top: 50%; -webkit-transform: translateY(-50%); text-align: center; }
 
 .top-nav { position: fixed; background: white; margin: 0; height: 100px; width: 100%; z-index: 1; }
 .top-nav h1 { position: absolute; color: #4a2617; text-shadow: -1px 0 #ffc423, 0 1px #ffc423, 1px 0 #ffc423, 0 -1px #ffc423; font-family: gill sans; font-size: 45px; margin-left: 232px; margin-top: 24px; }
