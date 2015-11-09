@@ -59,7 +59,7 @@ body {
 		float:right;
 		position: relative;
 	 	top: 50%;
-	 	transform: translateY(-50%);
+	 	-webkit-transform: translateY(-50%);
 	 	margin: 0 8.5%;
 	 	cursor:pointer;
 	}
