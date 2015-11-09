@@ -294,6 +294,7 @@
 
 	#opener h1 {
 		font-size: 35px !important;
+		-webkit-transform:translateY(-75%)!important;
 	}
 
 	#opener h1 span {
