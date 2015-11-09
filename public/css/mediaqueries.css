@@ -182,7 +182,7 @@
 
 	.footer-container {
 		width: 100%;
-		height: 175px;
+		height: 200px;
 	}
 
 	.footer-container ul {
@@ -191,7 +191,7 @@
 		float: none;
 		width: 100% !important;
 		padding: 0 0 3px 0;
-		transform:translateY(-100%);
+		transform:translateY(-150%);
 		font-size: 15px;
 
 	}
@@ -201,6 +201,8 @@
 		margin:0 auto !important;
 		width: 100% !important;
 		text-align: center;
+		top:20%;
+		transform:translateY(-100%) !important;
 	}
 
 	.social-media img {
@@ -219,7 +221,7 @@
 	}
 
 	.banner h1 {
-		font-size: 50px;
+		font-size: 35px !important;
 	}
 
 
