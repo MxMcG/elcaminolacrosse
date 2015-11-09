@@ -214,6 +214,8 @@ body {
 	 		transform: translateY(-50%);
 	 		padding-bottom: 10px;
 	 		width:90%;
+	 		text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
+
 	 		
 
 	 		span {
@@ -221,7 +223,7 @@ body {
 			font-family:gill sans;
 			font-size:30px;
 			font-weight:300;
-
+			text-shadow:none;
 	 		}
 
 		}

@@ -100,6 +100,25 @@
 
 
 @media screen and (max-width: 800px) {
+	#top-nav {
+		top: 0 !important;
+		position: fixed;
+	}
+
+	.banner {
+		background-size: auto 150px;
+		display: none !important;
+
+
+	}
+
+		.banner h1 {
+		font-size: 65px;
+		display: none !important;
+	}
+
+
+
 
 
 	#roster .column li {
@@ -265,7 +284,7 @@
 	}
 
 	.schedule-container {
-		font-size: 12px;
+		font-size: 10px;
 
 	}
 
