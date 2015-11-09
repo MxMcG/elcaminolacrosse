@@ -70,6 +70,8 @@ body {
 		position:absolute;
 		width:150px;
 		margin:3px 5%;
+		animation-name:swing;
+		animation-duration:1s;
 
 	
 	}
@@ -206,17 +208,18 @@ body {
 
 			color: $brown;
 			font-family:gill sans;
-			font-size:50px;
+			font-size:60px;
 			position: relative;
 	 		top: 50%;
 	 		transform: translateY(-50%);
 	 		padding-bottom: 10px;
-	 		width:65%;
+	 		width:90%;
+	 		
 
 	 		span {
 	 		color: $brown;
 			font-family:gill sans;
-			font-size:35px;
+			font-size:30px;
 			font-weight:300;
 
 	 		}
@@ -286,7 +289,7 @@ body {
 	.schedule-container {
 		width:85%;
 		height:440px;
-		background: rgba(209, 209, 209, 0.95);
+		background: rgba(255, 255, 255, 0.9);
 		margin:10px auto;
 
 		ul { 
@@ -497,7 +500,7 @@ body {
 }
 
 #contact {
-	height: 450px;
+	height: 375px;
 	h3 {
 		width:100%;
 		margin:75px auto;
@@ -558,15 +561,61 @@ body {
 	}	
 }
 
-footer {
-	bottom:0;
-	position:relative;
+.footer-container {
 	left:0;
 	right:0;
 	height:135px;
 	width:100%;
 	margin:0;
 	padding: 0;
-	clear:both;
+	height: 125px;
+	width: 100%;
+	background: $brown;
+	float:left;
+
+	ul {
+
+		list-style:none;
+		position: relative;
+	 	top: 50%;
+	 	transform: translateY(-50%);
+	 	color:white;
+	 	margin:0;
+	 	padding: 0 5%;
+	 	width:30%;
+	 	margin-right: 0;
+	 	float: left;
+
+		li:first-child {
+			font-weight: bold;
+			color: $yellow;
+			margin-bottom:5px;
+
+		}
+
+	}
+
+	.social-media {
+		margin: 0 2%;
+		width:40%;
+		position: relative;
+		padding: 0;
+		float: right;
+		position: relative;
+	 	top: 50%;
+	 	transform: translateY(-50%);
+
+
+
+			img {
+				width:50px;
+				float: right;
+	 			margin-right: 20px;
+
+
+			}
+	}
+
+
 }
 

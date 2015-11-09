@@ -32,7 +32,6 @@ $(document).ready(function() {
 
   $(".menu").on("click", function(){
     $(".top-nav ul").toggleClass("active");
-
   });
 
   

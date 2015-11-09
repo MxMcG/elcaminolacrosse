@@ -6,7 +6,7 @@ body { margin: 0; padding: 0 0 0 135px 0; max-height: 100%; }
 .top-nav { position: fixed; background: white; margin: 0; height: 100px; width: 100%; z-index: 1; }
 .top-nav h1 { position: absolute; color: #4a2617; text-shadow: -1px 0 #ffc423, 0 1px #ffc423, 1px 0 #ffc423, 0 -1px #ffc423; font-family: gill sans; font-size: 45px; margin-left: 232px; margin-top: 24px; }
 .top-nav .menu { display: none; float: right; position: relative; top: 50%; transform: translateY(-50%); margin: 0 8.5%; cursor: pointer; }
-.top-nav .logo { position: absolute; width: 150px; margin: 3px 5%; }
+.top-nav .logo { position: absolute; width: 150px; margin: 3px 5%; animation-name: swing; animation-duration: 1s; }
 .top-nav ul { list-style: none; margin: 0 -6.5%; width: 100%; padding: 33px 0; position: fixed; }
 .top-nav ul li { display: inline-block; text-align: center; position: relative; float: right; height: 35px; width: 100px; }
 .top-nav ul li .border-bottom { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-bottom: 2px #ffc423 solid; -webkit-transform: translateY(35%); -moz-transform: translateY(35%); -o-transform: translateY(35%); visibility: hidden; -webkit-transition: all .4s ease-in-out; -o-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; }
@@ -20,8 +20,8 @@ body { margin: 0; padding: 0 0 0 135px 0; max-height: 100%; }
 
 #opener { background-image: url(../elcamino-opener.png); background-size: 100% 100%; padding-top: 0; }
 #opener .cover { height: 100%; width: 100%; display: block; position: absolute; background: rgba(209, 209, 209, 0.6); }
-#opener .cover h1 { color: #4a2617; font-family: gill sans; font-size: 50px; position: relative; top: 50%; transform: translateY(-50%); padding-bottom: 10px; width: 65%; }
-#opener .cover h1 span { color: #4a2617; font-family: gill sans; font-size: 35px; font-weight: 300; }
+#opener .cover h1 { color: #4a2617; font-family: gill sans; font-size: 60px; position: relative; top: 50%; transform: translateY(-50%); padding-bottom: 10px; width: 90%; }
+#opener .cover h1 span { color: #4a2617; font-family: gill sans; font-size: 30px; font-weight: 300; }
 
 .main-container { position: relative; height: 550px; width: 100%; padding: 115px 0; z-index: 0; background: lightgray; }
 .main-container h1 { font-family: gill sans; font-weight: lighter; letter-spacing: 3px; padding-bottom: 10px; font-size: 50px; width: 50%; margin: 0 auto; border-bottom: 1px rgba(0, 0, 0, 0.1) solid; text-align: center; font-size: 25px; }
@@ -30,7 +30,7 @@ body { margin: 0; padding: 0 0 0 135px 0; max-height: 100%; }
 #schedule { width: 100%; height: 550px; background-image: url(../schedule.JPG); background-repeat: no repeat; background-position: 0% 50%; background-size: 100% 850px; }
 #schedule span { color: white; }
 #schedule h1 { text-align: justify; margin: 50px auto 0 auto; width: 85%; border-bottom: 0; padding-bottom: 5px; color: #ffc423; background: rgba(0, 0, 0, 0.3); padding-left: 7px; padding-top: 5px; box-sizing: border-box; }
-#schedule .schedule-container { width: 85%; height: 440px; background: rgba(209, 209, 209, 0.95); margin: 10px auto; }
+#schedule .schedule-container { width: 85%; height: 440px; background: rgba(255, 255, 255, 0.9); margin: 10px auto; }
 #schedule .schedule-container ul { height: 100%; width: 100%; margin: 0; padding: 0; overflow: scroll; overflow-x: hidden; }
 #schedule .schedule-container ul li { height: 20%; width: 105%; border-bottom: rgba(0, 0, 0, 0.1) 1px solid; list-style: none; margin: 0; float: left; padding: 10px 0 10px 10px; }
 #schedule .schedule-container ul li img { height: 100%; width: 100px; float: left; background: white; border: #ffc423 2px solid; }
@@ -53,7 +53,7 @@ body { margin: 0; padding: 0 0 0 135px 0; max-height: 100%; }
 #roster .column-wrapper .column ul { margin: 0; padding: 0; }
 #roster .column-wrapper .column ul li { list-style: none; font-family: gill sans; text-align: center; width: 100%; font-size: 20px; font-weight: lighter; margin: 10px auto 0 auto; }
 
-#contact { height: 450px; }
+#contact { height: 375px; }
 #contact h3 { width: 100%; margin: 75px auto; text-align: center; font-weight: Lighter; font-family: gill sans; font-size: 25px; letter-spacing: 3px; }
 #contact a:focus { outline: 0; }
 #contact div { border: 0; margin: 0 auto; width: 200px; padding: 0; }
@@ -62,6 +62,10 @@ body { margin: 0; padding: 0 0 0 135px 0; max-height: 100%; }
 @keyframes bounce { 0% { top: 0; }
   50% { transform: translateY(-25px); top: 140px; }
   100% { top: 0; } }
-footer { bottom: 0; position: relative; left: 0; right: 0; height: 135px; width: 100%; margin: 0; padding: 0; clear: both; }
+.footer-container { left: 0; right: 0; height: 135px; width: 100%; margin: 0; padding: 0; height: 125px; width: 100%; background: #4a2617; float: left; }
+.footer-container ul { list-style: none; position: relative; top: 50%; transform: translateY(-50%); color: white; margin: 0; padding: 0 5%; width: 30%; margin-right: 0; float: left; }
+.footer-container ul li:first-child { font-weight: bold; color: #ffc423; margin-bottom: 5px; }
+.footer-container .social-media { margin: 0 2%; width: 40%; position: relative; padding: 0; float: right; position: relative; top: 50%; transform: translateY(-50%); }
+.footer-container .social-media img { width: 50px; float: right; margin-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */
